@@ -43,7 +43,29 @@ liblua_a_SOURCES= \
 	lundump.c \
 	lutf8lib.c \
 	lvm.c \
-	lzio.c 
-
-
-
+	lzio.c \
+	./ltm.h \
+	./lzio.h \
+	./lstring.h \
+	./lgc.h \
+	./lmem.h \
+	./llimits.h \
+	./lualib.h \
+	./lapi.h \
+	./lctype.h \
+	./lparser.h \
+	./lstate.h \
+	./ltable.h \
+	./ldebug.h \
+	./luaconf.h \
+	./lua.h \
+	./lvm.h \
+	./lopcodes.h \
+	./lauxlib.h \
+	./ldo.h \
+	./lundump.h \
+	./lcode.h \
+	./llex.h \
+	./lobject.h \
+	./lfunc.h \
+	./lprefix.h 
