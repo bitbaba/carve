@@ -10,3 +10,7 @@
 /depcomp
 /install-sh
 /missing
+/autoscan.log 
+/configure.scan
+/config.h 
+/stamp-h1
