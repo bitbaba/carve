@@ -1,0 +1,7 @@
+/*.o
+/.deps/
+/Makefile
+/Makefile.in
+/liblua.a 
+/lua 
+/luac
