@@ -69,3 +69,5 @@ liblua_a_SOURCES= \
 	./lobject.h \
 	./lfunc.h \
 	./lprefix.h 
+
+include_HEADERS= lauxlib.h  luaconf.h  lua.h  lua.hpp  lualib.h
