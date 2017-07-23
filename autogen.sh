@@ -6,11 +6,7 @@ if command -v gmake >/dev/null 2>/dev/null; then
 fi
 $MAKE maintainer-clean >/dev/null 2>/dev/null
 
-if [ -x "`which autoreconf 2>/dev/null`" ] ; then
-   exec autoreconf -ivf
-fi
-
-aclocal -I m4 && \
-	autoheader && \
-	autoconf && \
-	automake --add-missing --force-missing --copy
+aclocal && \
+autoheader && \
+autoconf && \
+automake --add-missing --force-missing --copy
