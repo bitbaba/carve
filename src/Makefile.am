@@ -1,16 +1,14 @@
-#bin_PROGRAMS=lua
-#lua_SOURCES=lua.c
+bin_PROGRAMS=carvec carve
+carvec_SOURCES=luac.c
+carvec_LDADD=libcarve.a
+carvec_LDFLAGS=-L$(top_srcdir)/src
 
-bin_PROGRAMS=luac lua
-luac_SOURCES=luac.c
-luac_LDADD=liblua.a
-luac_LDFLAGS=-L$(top_srcdir)/src
-lua_SOURCES=lua.c
-lua_LDADD=liblua.a
-lua_LDFLAGS=-L$(top_srcdir)/src
+carve_SOURCES=lua.c
+carve_LDADD=libcarve.a
+carve_LDFLAGS=-L$(top_srcdir)/src
 
-lib_LIBRARIES=liblua.a
-liblua_a_SOURCES= \
+lib_LIBRARIES=libcarve.a
+libcarve_a_SOURCES= \
 	lapi.c \
 	lauxlib.c \
 	lbaselib.c \
