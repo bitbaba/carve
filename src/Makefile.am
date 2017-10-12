@@ -68,4 +68,9 @@ libcarve_a_SOURCES= \
 	./lfunc.h \
 	./lprefix.h 
 
-include_HEADERS= lauxlib.h  luaconf.h  lua.h  lua.hpp  lualib.h
+## 1) to deploy headers into `include' directly
+#include_HEADERS= lauxlib.h  luaconf.h  lua.h  lua.hpp  lualib.h
+
+## 2) or use subdir `carve' to host deployed headers
+carveheadersdir= $(includedir)/carve
+carveheaders_HEADERS= lauxlib.h  luaconf.h  lua.h  lua.hpp  lualib.h
