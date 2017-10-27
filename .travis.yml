@@ -2,7 +2,5 @@ language: c
 
 # https://docs.travis-ci.com/user/customizing-the-build
 
-install:
-- ./autogen.sh
-- ./configure
-- make dist
+script:
+- ./autogen.sh && ./configure && make && make dist
