@@ -1,0 +1,8 @@
+language: c
+
+# https://docs.travis-ci.com/user/customizing-the-build
+
+install:
+- ./autogen.sh
+- ./configure
+- make dist
